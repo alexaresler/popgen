@@ -33,7 +33,7 @@ head(data[1:10])
 ```
 
 ```{r, echo=T}
-head(data.snp.info[1:6])
+head(data.snp.info)
 ```
 
 
