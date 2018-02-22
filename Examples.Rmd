@@ -332,10 +332,6 @@ OR.TradPerm(genotypeLine, affectionLine, fromCol,
 Forest plot
 
 ```{r, echo=F}
-knitr::opts_chunk$set(fig.width=8.2, fig.height=5.3) 
-```
-
-```{r, echo=F}
 ggplot(mod.results, aes(y=OR, x = reorder(rownames(mod.results), OR))) +
   geom_point() +
   geom_errorbar(aes(ymin=L, ymax=U), width=.2) +
@@ -348,10 +344,6 @@ ggplot(mod.results, aes(y=OR, x = reorder(rownames(mod.results), OR))) +
 
 
 P-value vs. SNP position
-
-```{r, echo=F}
-knitr::opts_chunk$set(fig.width=8, fig.height=5) 
-```
 
 ```{r, echo=F}
 data.lz = merge(mod.results, data.snp.info, by="row.names", all.x=T)
@@ -378,10 +370,6 @@ Manhattan plot
 nrow(gwasResults)
 
 head(gwasResults)
-```
-
-```{r, echo=F}
-knitr::opts_chunk$set(fig.width=8, fig.height=4.8) 
 ```
 
 ```{r, echo=T}
