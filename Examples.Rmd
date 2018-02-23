@@ -4,15 +4,6 @@ author: Alexa Resler
 output: html_document
 ---
 
-
-```{r, include=F}
-# Set working directory
-setwd("/Users/alexaresler/Dropbox/Talks/R Genetics/Data")
-#setwd("C:/Users/alexa/Dropbox/Talks/R Genetics/Data")
-wd = getwd()
-```
-
-
 # Genetic association study example using R
 
 ## Load packages
